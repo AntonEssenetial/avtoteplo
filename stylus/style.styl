@@ -1,0 +1,463 @@
+@import 'slick.css';
+@import 'slick-theme.css';
+@import 'animate.min.css';
+@import "reset.css";
+@import "variables";
+@import 'flex';
+@import 'nib';
+@import 'sprite';
+@import 'mixins';
+
+body 
+  font-family roboto
+  background: url(../images/bg.jpg) no-repeat top center
+.wrapper 
+  min-width 1000px
+.section-wrapper_hidden 
+  overflow-y hidden
+.section-wrapper
+.footer-wrapper
+  max-width 1200px 
+  margin 0 auto
+  padding 0 20px 
+.section-head
+  max-width 1920px
+.container-wrapper
+  width 100%
+  margin 0 auto
+.header
+  padding 20px
+  &__row
+    &:first-child
+      margin 0 0 10px 0
+  &__logo
+    text-decoration none
+    &:before  
+      retinaSprite($sprite_logo_group)
+      content ''
+      display inline-block
+      vertical-align: middle 
+      margin-right 5px
+      box-flex: 1;
+      flex: 0 0 auto;
+  &__span2 
+    font-size 9px 
+    display block
+    text-transform: uppercase
+    margin-top 5px
+  &__span1
+    font-size 24px
+  &__form 
+    display inline-block
+    margin-right 10px
+.menu
+  &__item 
+    margin-left 25px
+    &_active a
+      color red 
+      text-decoration: none
+.section-main
+  &__cont 
+    margin-bottom 80px
+  &__cont1_65
+    width 65%
+    margin-top 40px
+    img
+      box-flex: 1;
+      flex: 0 0 auto;
+  &__cont1_top 
+    margin-top 0px
+    > a 
+      margin-top 10px
+  &__links
+    margin 0 0 0px 0
+  &__link 
+    font-size 18px
+    opacity 0.5
+    &.slick-current
+      opacity 1
+  &__p
+    margin-top 50px
+    p 
+      font-size 18px
+      line-height 27px
+      a 
+        margin 10px 0 0 0
+        display block
+  &__s 
+    width 90px
+    margin-left 20px
+    margin-top 40px
+    a
+      font-size 12px
+    p
+      font-size 12px
+      opacity 0.5
+      margin 0 0 5px 0 
+    span
+      font-size 12px
+      margin-left 5px
+h1 
+  font-size 129px
+  text-transform: uppercase
+  font-weight 100
+  color black
+  margin 30px 0px 30px 80px
+  span
+    font-size 9px 
+    color black 
+    vertical-align: top
+    margin-top 25px
+    margin-left 10px
+    font-weight bold
+.section-cont__wrap_712 
+  width 712px
+  margin-left 238px !important
+.section-cont__wrap_317
+  width: 317px;
+  margin-right: 50px;
+  z-index 1
+.section-cont__wrap_213
+  width: 213px;
+  margin-right: 15px;
+.img__bg_abs
+  position absolute
+  bottom 80px
+.border 
+  border-bottom 1px solid rgba(122, 93, 78, 0.29);
+.content-wrapper_vid 
+  padding 60px 0
+  width 100%
+  margin 0 auto
+.content-wrapper_reset 
+  width 100% 
+  margin 0 auto 
+  padding 30px 0px 330px 0px
+  position relative
+  background: url(../images/bg36.png) no-repeat center bottom
+  background-size contain
+.red_reset 
+  margin 10px 0 0 0
+.filter__item 
+  margin 30px 0
+  a 
+    font-size 18px
+.section-menu 
+  background: white
+  position fixed
+  bottom 0px
+  width 100%
+  padding 20px
+  min-width 1000px
+  z-index 1
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.17);
+  .button 
+    text-decoration none
+.section-menu-links a
+  margin-right 15px
+.section-men-button form 
+  margin-right 15px
+.label__form_select_grey 
+  color #9c9c9c
+  select 
+    color #9c9c9c
+    text-decoration underline
+  &:after 
+    border-top 4px solid #9c9c9c
+.section-cont 
+  background-image: url(../images/bg33.png), url(../images/bg34.png)
+  background-position:  0px 580px, bottom
+  background-repeat no-repeat, no-repeat
+  background-size contain
+  .img__bg
+    display block
+    width 100%
+    height auto
+  &_3
+    background: url("../images/bg38.jpg") no-repeat center 76px;
+  &_4
+    padding-bottom 60px
+  &_5 
+    background: url(../images/bg35.png) no-repeat top center
+  &__soft 
+    color grey
+    margin 0 0 100px 0
+  &__phone
+    color red
+    text-decoration: none
+    font-size 100px
+    font-weight 100
+    margin 20px 0
+  &_8
+    .content-wrapper
+      padding 100px 0 30px 0
+    .button_big
+      margin 60px 0 100px 0
+  &__span_inline 
+    display inline-block
+    font-weight 400 !important
+  &_5 
+    padding-top 50px
+  &__or 
+    color grey
+    text-align: center
+    margin 50px 0 30px 0
+    a 
+      color @color
+      margin 0 10px
+  &__form
+    margin 0 0 50px 50px
+  &__icon4
+    retinaSprite($sprite_icon5_group)
+    box-flex: 1;
+    flex: 0 0 auto;
+    margin-right 10px
+  &__icon5
+    retinaSprite($sprite_icon6_group)
+    box-flex: 1;
+    flex: 0 0 auto;
+    margin-right 10px
+  &__str1
+    font-weight bold 
+    color grey
+    font-size 15px
+  &__str2 
+    color grey
+    font-size 15px
+    line-height 24px
+    margin-bottom 20px
+  &__icon1
+    retinaSprite($sprite_icon2_group)
+    margin 10px 0 20px 0
+  &__icon2
+    retinaSprite($sprite_icon3_group)
+    margin 10px 0 20px 0
+  &__icon3 
+    retinaSprite($sprite_icon4_group)
+    margin 10px 0 20px 0
+  &__h3 
+    font-size 90px
+    color black
+    margin 60px 0 0 0
+    line-height 118px
+  &__img 
+    margin 0 0 10px 0
+  &__p 
+    font-size 18px
+    line-height 25px
+    color #333333
+  &__title 
+    text-align center
+    width 100%
+    font-size 18px
+    margin-bottom 60px
+  &__title2
+    font-size 40px
+    font-weight 100
+    margin 0 0 20px 0
+    position relative 
+    top -5px
+  &__h2 
+    font-size 48px
+    color black
+    text-align: center
+    margin 40px 0
+    &_short 
+      width 800px
+      margin-left auto
+      margin-right auto
+      margin-bottom 20px
+    &_top 
+      margin 50px 0
+    &_reset 
+      text-align left
+      font-size 40px
+      width 82%
+      margin 40px auto 100px auto
+  &__a 
+    color grey
+    margin 15px 0 0 0
+  &__col
+    &_50 
+      width 45%
+    &_33 
+      width 30%
+      margin 0px 0 50px 0
+      img 
+        width 100% 
+        height auto
+        margin 0 0 20px 0
+    &_70
+      width 66%
+      margin-right 7%
+    &_40
+      width 35%
+      padding-right 5%
+    &_60
+      width 60%
+    &_45
+      width 40%
+      padding-right 35px
+      margin 0 0 60px 0
+      img 
+        width 100% 
+        height auto
+  &__photo
+    margin-left 45%
+  &__span 
+    font-weight bold 
+    font-size 18px
+    line-height 25px
+    &_reset 
+      margin 10px 0 0 0
+    &3
+      display block
+      font-size 18px
+      width 200px
+      margin 65px 0 50px 45%
+      position relative
+      &:before 
+        content ''
+        width 100px 
+        height 3px 
+        background: red
+        display inline-block
+        position absolute
+        left -110px
+        top 9px
+      &:nth-child(2)
+        margin-top 0px
+      &:nth-child(3)
+        margin-top 104px
+      &:nth-child(4):before 
+        display none
+  &__video 
+    width 100%
+    margin 0 0 20px 0
+    p 
+      font-weight bold
+      font-size 17px
+      margin 10px 0
+    a 
+      color grey
+    iframe 
+      width @width
+      height 400px
+  &__s-wrapper 
+    width 800px 
+    margin 0 auto
+    img 
+      margin 0 0 30px 0
+      width 100% 
+      height auto
+    .num 
+      border 2px solid red 
+      width 60px 
+      height @width
+      border-radius (50%)
+      line-height @height
+      text-align: center
+      color red 
+      font-size 30px
+      margin-right 20px
+  &__slider 
+    padding-bottom 60px
+  &__row
+    &_80
+      width 80%
+    &_bg
+      width 50%
+      height 720px
+      // background: url(../images/bg11.png) no-repeat left
+    &_50 
+      width 50%
+      padding-right 60px
+      iframe 
+        height 300px
+    &_top 
+      margin 0 0 0px 0
+      img 
+        margin 0 20px 0 0
+    &_reset
+      margin 100px 0 0 0
+      &:first-child
+        margin-top 150px
+.m-right
+  margin-right 30px
+.m-left 
+  margin-left 20px
+.auto__width
+  .red 
+    display block
+    line-height 28px
+.view-all 
+  text-align: center
+  margin 20px 0 80px 0
+  a 
+    font-size 18px
+  &-2 
+    margin 30px 0
+    font-size 18px
+    text-align center
+    a 
+      font-size 18px
+      margin 0 10px
+.slick-dots
+  bottom -45px    
+.slick-dots li.slick-active button:before
+  opacity: 1;
+  color: #dedede;
+.footer__sel 
+  margin-left 10px
+  span 
+    display block
+    font-weight 400
+    a 
+      margin-left 5px
+.just-c 
+  justify-content center
+.ul-wrapper 
+  margin 40px 0 30px 0
+.footer 
+  background: rgb(241, 241, 241);
+  &__bottom 
+    margin-bottom 70px
+  &__ul 
+    width 25%
+  &__img 
+    width 100%
+    height auto
+    margin 20px 0 0 0
+  &__item
+    margin 15px 0
+    a 
+      font-size 18px 
+    &:first-child
+      a 
+        color black
+.inline
+  a
+    font-size 18px
+  span 
+    margin-right 10px
+    font-size 18px
+    font-weight normal
+.del 
+  margin 20px 0 0 0
+  a 
+    margin-right 20px
+.content-wrapper_white 
+  background: white
+  padding 40px 60px
+  text-align: center
+.bx-slider
+  width 1000px
+  margin 0 auto 60px auto
+@media only screen and (max-width : 1160px)
+  .section-cont__span3
+    margin: 65px 0 50px 35%;
+  .section-cont__photo 
+    margin-left: 35%;
+@media only screen and (max-width : 1050px)
+  .header__logo 
+    width 340px

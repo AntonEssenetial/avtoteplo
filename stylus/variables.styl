@@ -1,0 +1,143 @@
+*
+  box-sizing border-box
+a 
+  img 
+    display block
+// Functions 
+decor()
+  text-decoration underline
+  &:hover 
+    text-decoration none
+trs()
+  transition ease-in-out .2s
+// Colors
+red = #DA0000
+grey = #a99271
+// Color class
+a 
+  display inline-block
+.white
+  color white
+.red
+  color red
+  text-decoration underline
+.red_bold 
+  font-weight bold
+// Fonts
+roboto = 'Roboto', sans-serif;
+// Buttons
+button 
+  border none 
+  vertical-align middle
+  cursor pointer 
+  border none
+  outline none
+  background transparent
+menu 
+  padding 0px
+  margin 0px
+span 
+  display inline-block
+  vertical-align middle
+  font-size 17px
+p 
+  color dark
+  font-size 16px
+a 
+  color black
+  display inline-block
+  &:hover 
+    color red
+    text-decoration: none
+h1, h2, h3, h4, h5, h6 
+  color #444444
+  font-weight normal
+.text 
+  font-size 16px
+  line-height 25px
+.button
+  height 36px 
+  line-height @height
+  padding 0 18px
+  display inline-block
+  border-radius (4px)
+  font-size 14px
+  text-align: center
+  cursor pointer
+  trs()
+.button_big
+  font-size 35px
+  height 120px 
+  font-weight 300
+  text-decoration: none
+  padding 0 50px
+  line-height @height
+.button_red
+  color white
+  background: red
+  &:hover 
+    color white
+.button_width 
+  width 100%
+// Disabled input
+input[type=text]:read-only
+  background-color: #f7fafc
+  color grey2
+  &:focus
+    border 1px solid grey2
+input[type=text]:disabled,
+input[type=submit]:disabled,
+.select_disabled,
+.button_disabled
+  background: #c6c6c6 !important
+  border 1px solid #c6c6c6 !important
+  color #888686
+  cursor default
+.button_disabled:hover
+  background: #c6c6c6 !important
+  border 1px solid #c6c6c6 !important
+  color #888686
+  curosor default !important
+.input_error
+  border 1px solid #f07676 !important
+  color #f07676
+.input_success 
+  border 1px solid green !important
+  color green
+input[type=submit]:disabled
+  color white
+select 
+  border none
+  background none
+  -webkit-appearance none
+  -moz-appearance none
+  appearance none
+  border-radius 0
+  font-size 17px 
+  color red
+.label__form_select
+  &:after
+    content ''
+    border-top 4px solid red
+    border-left 4px solid transparent
+    border-right 4px solid transparent
+    display inline-block
+    top -3px
+    position relative
+// coll 
+.col__50 
+  width 50%
+// H heading 
+h3 
+  font-size 16px
+  font-weight 300 
+h2 
+  font-size 36px
+  font-weight 300
+h4 
+  font-size 24px
+  font-weight 300
+shadow()
+  box-shadow: 0 3px 10px rgba(160, 160, 160, 0.4);
+.red_18
+  font-size 18px

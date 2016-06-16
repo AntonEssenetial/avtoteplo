@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+a img {
+  display: block;
+}
+a {
+  display: inline-block;
+}
+.white {
+  color: #fff;
+}
+.red {
+  color: #da0000;
+  text-decoration: underline;
+}
+.red_bold {
+  font-weight: bold;
+}
+button {
+  border: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+menu {
+  padding: 0px;
+  margin: 0px;
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 17px;
+}
+p {
+  color: dark;
+  font-size: 16px;
+}
+a {
+  color: #000;
+  display: inline-block;
+}
+a:hover {
+  color: #da0000;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #444;
+  font-weight: normal;
+}
+.text {
+  font-size: 16px;
+  line-height: 25px;
+}
+.button {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 18px;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.button_big {
+  font-size: 35px;
+  height: 120px;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 0 50px;
+  line-height: 120px;
+}
+.button_red {
+  color: #fff;
+  background: #da0000;
+}
+.button_red:hover {
+  color: #fff;
+}
+.button_width {
+  width: 100%;
+}
+input[type=text]:read-only {
+  background-color: #f7fafc;
+  color: grey2;
+}
+input[type=text]:read-only:focus {
+  border: 1px solid grey2;
+}
+input[type=text]:disabled,
+input[type=submit]:disabled,
+.select_disabled,
+.button_disabled {
+  background: #c6c6c6 !important;
+  border: 1px solid #c6c6c6 !important;
+  color: #888686;
+  cursor: default;
+}
+.button_disabled:hover {
+  background: #c6c6c6 !important;
+  border: 1px solid #c6c6c6 !important;
+  color: #888686;
+  curosor: default !important;
+}
+.input_error {
+  border: 1px solid #f07676 !important;
+  color: #f07676;
+}
+.input_success {
+  border: 1px solid #008000 !important;
+  color: #008000;
+}
+input[type=submit]:disabled {
+  color: #fff;
+}
+select {
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  font-size: 17px;
+  color: #da0000;
+}
+.label__form_select:after {
+  content: '';
+  border-top: 4px solid #da0000;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  display: inline-block;
+  top: -3px;
+  position: relative;
+}
+.col__50 {
+  width: 50%;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+.red_18 {
+  font-size: 18px;
+}
