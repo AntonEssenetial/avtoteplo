@@ -11,10 +11,10 @@ $(document).ready(function() {
     autoplay: true,
     infinite: true
   });
-  $('.bxslider').bxSlider({
-    pagerCustom: '.bx-pager',
-    controls: false
-  });
+  // $('.bxslider').bxSlider({
+  //   pagerCustom: '.bx-pager',
+  //   controls: false
+  // });
   // Sandwitch
   $('.menu__sandwitch').click(function(event) {
     $(this).toggleClass('active');

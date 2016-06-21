@@ -1,0 +1,33 @@
+doctype
+html
+  head 
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="icon", type='image/x-icon', href="favicon.ico")
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    title Автотепло
+  body
+    .wrapper
+      .popup-wrapper.row
+        .popup-content.animated.fadeInUp.row
+          .popup
+            .close
+            h2.popup__h2 Скидка 15% <br> до конца августа
+            .success2
+              p.popup__p С 1 мая по 30 августа десйствект скидка 15% на все модели <br> Автотепла. Цены на сайте указаны с учетом скидки
+              .share
+                p.popup__p Расскажите друзьям о распродаже:
+                .share-icons 
+                  img(src="images/share.png", alt="")
+            .section-cont__top.row.center.just-c
+              img(src="images/bg20.jpg", width='95' height='123' alt="")
+              .section-cont__row.footer__sel
+                span.section-cont__span Три года в наличии
+                label.form__label.label__form_select В наличии в
+                  select(name="").form__select
+                    option(value="") Воронеже
+                span.section-cont__span Удобные варианты
+                  a(href="").red доставки и оплаты
+            .row.center-c
+              a(href="").button.button_red.button_c Выбрать автомобиль
