@@ -1,0 +1,65 @@
+doctype
+html
+  head 
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="icon", type='image/x-icon', href="favicon.ico")
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    title Автотепло
+  body
+    .wrapper
+      section.section-menu.row.between.center
+        .section-menu-links
+          a(href="") Преимущества 
+          a(href="") Гарантии
+          a(href="") Где купить?
+          a(href="") Доставка и оплата
+          a(href="") Отзывы
+          a(href="") Установка
+        .section-men-button
+          form(action="").header__form
+            label().label__form.label__form_select.label__form_select_grey В наличии
+              select.label__select
+                option(value="Воронеж") в 32 годродах
+                option(value="Воронеж 2") в 33 городах
+          a(href="").button.button_red Купить
+      section.section-head
+        include head.jade
+      section.section-main
+        .section-wrapper
+          h2.section-cont__h2.section-cont__h2_m 8 800 150-50-50
+          .section-cont__town-wrap.border
+            .section-cont__town
+              span Круглосуточно и бесплатно
+              a(href="").red.red_18 Обратный звонок
+            .section-cont__town
+              span Воронеж: (4732) 150-50-50
+              a(href="").red.red_18 Другой город
+          .section-cont__container.section-cont__container_779
+            h2.section-cont__h2 Главный офис и производство <br> в Челябинске
+            img(src="images/bg25.jpg", alt="")
+            .section-cont__row.row
+              .section-cont__col.section-cont__col_m
+                span.section-cont__span.section-cont__span_m 454106, г. Челябинск, ул. Краснознаменная, д. 28
+                span.section-cont__adr1 +7 (351) 797-15-25 (с факсом)
+                a(href="mailto:mail@yandex.ru").red.red_18 Электронная почта
+            .section-cont__row.row.between
+              .section-cont__col_50
+                h2.section-cont__h2.h2.section-cont__h2_left Филиал в Москве
+                img(src="images/bg26.jpg", alt="").contacts__img
+                span.section-cont__span.section-cont__span_m 123456, г. Москва, МКАД 19км, «ТК Южные Ворота», вход А, 1-я линия, 65
+                span.section-cont__adr1 +7 (343) 330-86-80
+                a(href="mailto:mail@yandex.ru").red.red_18 Электронная почта
+              .section-cont__col_50
+                h2.section-cont__h2.h2.section-cont__h2_left Филиал в Екатеринбурге
+                img(src="images/bg26.jpg", alt="").contacts__img
+                span.section-cont__span.section-cont__span_m 123456, г. Екатеринбург, ул. Бакинских Комиссаров, д. 58
+                span.section-cont__adr1 +7 (343) 330-86-80
+                a(href="mailto:mail@yandex.ru").red.red_18 Электронная почта
+            .section-cont__row.row.section-cont__row_map.center
+              .section-cont__icon6
+              .section-cont__wrap
+                span.section-cont__adr1.section-cont__span_m Дилеры и представители в 68 городах семи стран
+                a(href="").red.red_18 Сезонная распродажа »
+      include footer.jade

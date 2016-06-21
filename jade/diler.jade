@@ -1,0 +1,55 @@
+doctype
+html
+  head 
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="icon", type='image/x-icon', href="favicon.ico")
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    title Автотепло
+  body
+    .wrapper
+      section.section-menu.row.between.center
+        .section-menu-links
+          a(href="") Преимущества 
+          a(href="") Гарантии
+          a(href="") Где купить?
+          a(href="") Доставка и оплата
+          a(href="") Отзывы
+          a(href="") Установка
+        .section-men-button
+          form(action="").header__form
+            label().label__form.label__form_select.label__form_select_grey В наличии
+              select.label__select
+                option(value="Воронеж") в 32 годродах
+                option(value="Воронеж 2") в 33 городах
+          a(href="").button.button_red Купить
+      section.section-head
+        include head.jade
+      section.section-main
+        .section-wrapper
+          h2.section-cont__h2 Дилеры и партнеры
+          span.deal Именно с этого времени наша компания начала заниматься теплоизоляционными материалами.
+          .section-cont__form2 
+            form(action="")
+              label().form__label.row.between
+                input(type="text", placeholder='Поиск на городам, названиям и адресам').form__input
+                input(type="submit", value='Найти').button.button_red.button_mid
+          .section-cont__container
+            img(src="images/bg24.jpg", alt="")
+          .section-cont__adr.row
+            .section-cont__col
+              span.section-cont__span Навзвание компании
+              a(href="mailto:moscowavtoteplo.ru").red moscowavtoteplo.ru
+              span.section-cont__adr1 Москва, Шекснинский 
+              span.section-cont__adr1 пр-кт, 16А, офис 29
+              span.section-cont__adr1 8 (921) 427-73-44
+              a(href="mailto:mail@yandex.ru").red mail@yandex.ru
+            .section-cont__col
+              span.section-cont__span Навзвание компании
+              a(href="mailto:moscowavtoteplo.ru").red moscowavtoteplo.ru
+              span.section-cont__adr1 Москва, Шекснинский 
+              span.section-cont__adr1 пр-кт, 16А, офис 29
+              span.section-cont__adr1 8 (921) 427-73-44
+              a(href="mailto:mail@yandex.ru").red mail@yandex.ru
+      include footer.jade

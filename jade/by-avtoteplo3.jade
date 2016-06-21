@@ -1,0 +1,83 @@
+doctype
+html
+  head 
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="icon", type='image/x-icon', href="favicon.ico")
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    title Автотепло
+  body
+    .wrapper
+      .popup-wrapper.row
+        .popup-content.animated.fadeInUp.row
+          .popup
+            .close
+            h2.popup__h2 Купить автотепло
+            a(href="").another.red.red_18.another_m К выбору автомобиля
+            .section-cont__row
+              .section-main__col
+                .section-main__img
+                  ul.bxslider
+                    li
+                      img(src="images/slide.jpg", alt="")
+                    li
+                      img(src="images/slide.jpg", alt="")
+                    li
+                      img(src="images/slide.jpg", alt="")
+                    li
+                      img(src="images/slide.jpg", alt="")
+                    li
+                      img(src="images/slide.jpg", alt="")
+                  .bx-pager.row.between
+                    a(href="", data-slide-index='0').bx-element
+                      img(src="images/slide.jpg", alt="")
+                    a(href="", data-slide-index='1').bx-element
+                      img(src="images/slide.jpg", alt="")
+                    a(href="", data-slide-index='2').bx-element
+                      img(src="images/slide.jpg", alt="")
+                    a(href="", data-slide-index='3').bx-element
+                      img(src="images/slide.jpg", alt="")
+                    a(href="", data-slide-index='4').bx-element
+                            img(src="images/slide.jpg", alt="")
+              .section-main__col.section-main__col_popup
+                h4 Для Renalut logan подойдет Автотепло #15
+                ul.section-main__ul
+                  li.row.between Длинна
+                    span 80см
+                  li.row.between Ширин
+                    span 140см
+                  li.row.between Масса
+                    span 2.9
+                  li.row.between Цвет
+                    span Белый
+                .section-main__price
+                  span.section-main__discount 18000 р
+                  span.section-main__primary 21590 р 
+                  a(href="").red.red_18.more Выбрать еще одно Автотепло
+                .section-forms
+                  form(action="")
+                    .span.bold Вы в городе
+                    label().label__select
+                      select.form__select_popup
+                        option(value="") Воронеж
+                        option(value="") Москва
+                    .span.bold Доставка по адресу  
+                      a(href="").red Самовывоз (2 адреса)
+                    input(type="text", placeholder='Улица, дом, квартира или офис').form__input_583.popup__input
+                    .span.bold Телефон
+                    input(type="text", placeholder='Номер с 8 или +7').popup__input
+                    .span.bold Как вас зовут
+                    input(type="text", placeholder='Имя или фамилия получателя').popup__input.popup__input_443
+                    .span.bold Способ оплаты
+                    label().label__select
+                      select.form__select_popup
+                        option(value="") Банковской картой
+                        option(value="") Москва
+                    .span.bold Итого
+                    span.itog Автотепло #15 — 1590 р  •  Доставка по адресу — 200 р
+                    input(type="text", value='Перейти к оплате  •  2100 р').button.button_red.button_form
+          p.popup__p (4732) 150-50-50  •  8 800 150-50-50  •
+            a(href="").red Заказать обратный звонок
+
+include scripts.jade

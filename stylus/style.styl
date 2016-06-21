@@ -16,17 +16,29 @@ body
 .section-wrapper_hidden 
   overflow-y hidden
 .section-wrapper
-.footer-wrapper
   max-width 1200px 
   margin 0 auto
   padding 0 20px 
+.section-cont .section-wrapper 
+.section-cont_4 .section-wrapper   
+.section-cont_6 .section-wrapper 
+.footer-wrapper  
+  max-width 1013px
+  margin 0 auto
+  padding 0 20px
+.section-cont_5 .section-wrapper
+  max-width 1100px
+.section-cont_5
+  h2.section-cont__h2
+    font-size 58px
+    padding-left 110px
 .section-head
   max-width 1920px
 .container-wrapper
   width 100%
   margin 0 auto
 .header
-  padding 20px
+  padding 20px 45px
   &__row
     &:first-child
       margin 0 0 10px 0
@@ -98,11 +110,12 @@ body
       font-size 12px
       margin-left 5px
 h1 
+  letter-spacing 10px
   font-size 129px
   text-transform: uppercase
   font-weight 100
   color black
-  margin 30px 0px 30px 80px
+  margin 30px 0px 30px 90px
   span
     font-size 9px 
     color black 
@@ -110,6 +123,9 @@ h1
     margin-top 25px
     margin-left 10px
     font-weight bold
+    position relative 
+    top -15px
+    letter-spacing 2px
 .section-cont__wrap_712 
   width 712px
   margin-left 238px !important
@@ -258,7 +274,7 @@ h1
     position relative 
     top -5px
   &__h2 
-    font-size 48px
+    font-size 47px
     color black
     text-align: center
     margin 40px 0
@@ -273,7 +289,8 @@ h1
       text-align left
       font-size 40px
       width 82%
-      margin 40px auto 100px auto
+      line-height 60px
+      margin 10px auto 60px auto
   &__a 
     color grey
     margin 15px 0 0 0
@@ -291,12 +308,12 @@ h1
       width 66%
       margin-right 7%
     &_40
-      width 35%
+      width 33%
       padding-right 5%
     &_60
-      width 60%
+      width 64%
     &_45
-      width 40%
+      width 50%
       padding-right 35px
       margin 0 0 60px 0
       img 
@@ -349,7 +366,6 @@ h1
     img 
       margin 0 0 30px 0
       width 100% 
-      height auto
     .num 
       border 2px solid red 
       width 60px 
@@ -379,7 +395,7 @@ h1
       img 
         margin 0 20px 0 0
     &_reset
-      margin 100px 0 0 0
+      margin 77px 0 0 0
       &:first-child
         margin-top 150px
 .m-right
@@ -451,8 +467,381 @@ h1
   padding 40px 60px
   text-align: center
 .bx-slider
-  width 1000px
+  max-width: 1000px;
+  min-width: 960px;
   margin 0 auto 60px auto
+.jsNone 
+  display none
+.another 
+  background: rgba(255, 220, 93, 0.35);
+  padding 0 15px
+  height 45px 
+  line-height @height
+  position relative
+  margin 0 0 20px 0
+  &:before
+    position absolute
+    content ''
+    border-right 22px solid rgba(255, 220, 93, 0.35);
+    border-top 22px solid transparent
+    border-bottom 22px solid transparent
+    left -22px
+h4 
+  font-size 18px
+  color black
+  font-weight 400
+  margin 0 0 12px 0
+.bx-element.active 
+  border 2px solid rgba(218, 151, 0, 0.88);
+.bx-pager
+  margin 10px 0 0 0
+  a
+    width 24%
+    margin-right 1%
+    border 2px solid transparent
+    img 
+      width 100% 
+      height auto
+.section-main
+  &__col
+    &_270 
+      width 270px
+    &_650 
+      width 626px
+      margin-right 40px
+  &__by
+    margin 20px 0 0 0
+    .button 
+      text-decoration none
+      margin-right 15px
+    label
+      font-size 15px
+      font-weight normal
+      position relative 
+      top -2px
+    select
+      font-size 15px
+  &__price 
+    margin 56px 0
+  &__discount 
+    text-decoration line-through
+    color #9c9c9c
+    font-size 18px
+  &__primary 
+    font-size 18px 
+    color black
+    margin-left 15px
+  &__popup
+    width 100%
+    padding 1px 40px 40px 40px
+    background: white
+    border-radius (4px)
+    box-shadow: 0 0px 99px rgba(255, 165, 0, 0.45);
+    position relative
+    &:after 
+      background: url(../images/bgtr.png) no-repeat center 
+      content ''
+      position absolute
+      width 100%
+      background-size cover
+      height 313px 
+      top -313px
+      left 0px
+  &__ul 
+    width 150px
+    li 
+      margin 12px 0
+      font-size 15px
+      color #9c9c9c
+      span 
+        color black
+        font-size 15px
+.deal
+  font-size 18px
+  width 600px 
+  margin 0 auto 50px auto
+  text-align: center
+  display block
+.close 
+  retinaSprite($sprite_close_group)
+  position absolute
+  right 20px 
+  top 20px
+  cursor pointer
+input 
+textarea
+  padding 10px 
+  border 2px solid red
+  border-radius 4px
+  display block
+  width 100%
+  font-size 18px
+  color #c9c9c9
+.section-cont__h2_m
+  margin-bottom 20px
+.section-cont__town-wrap 
+  padding-bottom 60px
+  margin 0 0 70px 0
+.section-cont__container_779
+  width 779px 
+  margin 0 auto
+.section-cont__town 
+  margin 0 0 50px 0
+  text-align: center
+  span 
+    display block
+    margin 0 0 10px 0
+.section-cont__span_m
+  margin 0 0 15px 0
+.section-cont__col_m 
+  margin 30px 0
+.section-cont__adr
+  width 920px 
+  margin 50px auto 100px auto
+  a 
+    margin-bottom 15px
+    display block
+  .section-cont__col 
+    margin-right 100px
+    position relative
+    &:first-child:before 
+      content '1'
+      display inline-block
+      position absolute
+      left -20px
+      top 3px
+    &:nth-child(2):before 
+      content '2'
+      display inline-block
+      position absolute
+      left -20px
+      top 3px
+.section-cont__adr1
+  display block
+  margin 0 0 5px 0
+.section-cont__container
+  img 
+    max-width 100%
+    height auto
+    margin 0 auto
+    display block
+body .contacts__img 
+  margin 0 0 30px 0
+.form__input 
+  height 50px
+  padding 0 10px
+.section-cont__form2
+  width 960px 
+  margin 0 auto 30px auto
+  .button
+    margin-left 15px
+    width 200px
+.section-cont__col_200
+  width 200px
+.section-main__col_p 
+  width 540px
+  p 
+    margin-bottom 30px
+  li 
+    margin-bottom 30px 
+    font-size 18px 
+    line-height 23px
+    position relative
+    left 25px
+    &:before 
+      content ''
+      width 13px 
+      height 1px 
+      background: black
+      display block
+      left -25px
+      position absolute
+      top 12px
+  ul 
+    width 500px
+.red_1 
+  margin-top 30px
+.red_2 
+  margin-top 90px
+.section-cont__h2_800
+  width 820px
+  text-align left
+  font-size 37px
+  margin-left auto
+  margin-right auto
+  padding-left 5px
+  line-height 50px
+.section-main__row_1000
+  width 1030px
+  margin 0 auto
+  padding-left 110px
+.section-cont__p_800
+  width 806px 
+  margin 40px auto 50px auto
+.section-cont__h2_left
+  text-align left
+.section-cont__icon6
+  retinaSprite($sprite_map_group)
+  margin-right 20px
+.section-cont__row_map
+  margin 80px 0
+.f-left 
+  float left
+  margin-right 20px
+.clear
+  clearfix()
+  width 1000px 
+  margin 0 auto
+.section-cont__slider
+  margin 50px 0
+.ip-li 
+  margin 10px 0 120px 0
+  li 
+    margin 10px 0 15px 0
+.ip1
+  color grey
+  font-size 18px
+  width 200px
+  vertical-align: top
+.section-cont__slider_reset
+  img 
+    margin-bottom 15px
+.bold 
+  font-weight bold
+.popup-wrapper 
+  background: rgba(254, 225, 117, 0.53);
+  position fixed 
+  width 100% 
+  height 100%
+  z-index 1
+  overflow-y scroll
+.popup-content
+  margin auto auto
+  flex-direction column
+.popup__p
+  text-align: center
+  margin 20px 0
+  font-size 18px
+  a 
+    margin-left 6px
+.another_reset 
+  position absolute
+  left 50px
+  top 110px
+.another_m 
+  margin 30px 0 20px 0
+  position relative 
+  left -20px
+.size 
+  input 
+    margin-left 9px
+  .button 
+    height 55px 
+    line-height @height
+    font-size 18px
+  .border_yellow 
+    width 210px
+.popup
+  background: white 
+  width 780px
+  position relative
+  border-radius (2px)
+  padding 30px 90px
+  overflow hidden
+.border_yellow 
+  border: 2px solid #eecc50;
+  height 55px 
+  line-height @height
+.success 
+  margin 100px 0
+.share
+  text-align: center
+.share-icons 
+  margin-left 10px
+  display inline-block
+  img 
+    display block
+.popup__h2 
+  font-size 48px 
+  text-align: center
+.popup__tel 
+  width 100% 
+  text-align: center
+  margin 35px 0 50px 0
+.section-cont__row_33 
+  width 33% 
+.shadow
+  position relative
+  &:after
+    content ''
+    box-shadow: 0 0px 40px 42px #fff;
+    width 100%
+    height 1px
+    display block
+    z-index 1 
+    position absolute
+    bottom 0px 
+    left 0px
+.section-cont__or_reset
+  color: #a99271;
+  text-align: center;
+  margin: 0px 0 0px 0;
+  position: relative;
+  z-index: 1;
+.more 
+  margin-left 10px
+.popup__tel_reset
+  margin: 35px 0 28px 0;
+.section-main__col_popup
+  margin 20px 0 0 0
+.form__select_popup
+.popup__input
+  border-radius (3px)
+  background: #efefed
+  font-size 18px
+  color black
+  height 55px
+  line-height @height
+  width 286px
+  padding 0 20px
+  position relative
+  margin-bottom 30px
+  border 2px solid transparent
+  &:focus 
+    border 2px solid #EECC50
+    background: white
+.form__input_583 
+  width 583px 
+  height 55px 
+  line-height @height
+  margin-bottom 30px
+.itog 
+  font-style italic 
+  font-size 18px
+.popup__input_443
+  width 443px
+.label__select
+  position relative
+  &:after 
+    content ''
+    border-top 7px solid black 
+    border-left 5px solid transparent
+    border-right 5px solid transparent
+    display block
+    position absolute
+    z-index 1
+    top 7px 
+    right 20px
+.bold 
+  margin 0 0 15px 0
+  font-size 18px
+  a 
+    font-weight normal
+.button_form
+  height 72px 
+  line-height @height
+  font-size 18px
+  margin 40px 0 35px 0
 @media only screen and (max-width : 1160px)
   .section-cont__span3
     margin: 65px 0 50px 35%;
@@ -461,3 +850,8 @@ h1
 @media only screen and (max-width : 1050px)
   .header__logo 
     width 340px
+  .section-main__row_1000
+  .clear
+    width 960px
+  h1 
+    letter-spacing 6px
