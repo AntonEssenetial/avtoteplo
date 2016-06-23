@@ -5,12 +5,12 @@ $(document).ready(function() {
    $('.content-box, .button_anim, .form-box_anim').animated("fadeInUp","fadeOutDown");
 
   // Slider 
-  $('.section-cont__slick').slick({
-    dots: true,
-    arrows: false,
-    autoplay: true,
-    infinite: true
-  });
+  // $('.section-cont__slick').slick({
+  //   dots: true,
+  //   arrows: false,
+  //   autoplay: true,
+  //   infinite: true
+  // });
   // $('.bxslider').bxSlider({
   //   pagerCustom: '.bx-pager',
   //   controls: false

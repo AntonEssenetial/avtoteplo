@@ -20,7 +20,6 @@ body
   max-width 1200px 
   margin 0 auto
   padding 0 20px 
-.section-cont .section-wrapper 
 .section-cont_4 .section-wrapper   
 .section-cont_6 .section-wrapper 
 .footer-wrapper  
@@ -58,8 +57,11 @@ body
     display block
     text-transform: uppercase
     margin-top 5px
+    font-weight bold
   &__span1
     font-size 24px
+    font-weight bold
+    margin-top 5px
   &__form 
     display inline-block
     margin-right 10px
@@ -116,7 +118,7 @@ h1
   text-transform: uppercase
   font-weight 100
   color black
-  margin 30px 0px 30px 90px
+  margin 30px 0px 6px 90px
   span
     font-size 9px 
     color black 
@@ -129,9 +131,9 @@ h1
     letter-spacing 2px
 .section-cont__wrap_712 
   width 712px
-  margin-left 238px !important
+  margin 20px auto 10px auto !important
 .section-cont__wrap_317
-  width: 317px;
+  width: 332px;
   margin-right: 50px;
   z-index 1
 .section-cont__wrap_213
@@ -146,10 +148,13 @@ h1
   padding 60px 0
   width 100%
   margin 0 auto
+.section-cont__slick
+  .fotorama__stage
+    height 572px !important
 .content-wrapper_reset 
   width 100% 
   margin 0 auto 
-  padding 30px 0px 330px 0px
+  padding 30px 0px 310px 0px
   position relative
   background: url(../images/bg36.png) no-repeat center bottom
   background-size contain
@@ -159,6 +164,9 @@ h1
   margin 30px 0
   a 
     font-size 18px
+.section-cont_5 .section-cont__col_60
+  .section-cont__span 
+    margin-bottom 20px
 .section-menu 
   background: white
   position fixed
@@ -170,6 +178,10 @@ h1
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.17);
   .button 
     text-decoration none
+.section-cont_5
+  .section-cont__col_40
+    position relative 
+    top -60px
 .section-menu-links a
   margin-right 15px
 .section-men-button form 
@@ -233,7 +245,7 @@ h1
     retinaSprite($sprite_icon6_group)
     box-flex: 1;
     flex: 0 0 auto;
-    margin-right 10px
+    margin-right 16px
   &__str1
     font-weight bold 
     color grey
@@ -331,7 +343,7 @@ h1
     &3
       display block
       font-size 18px
-      width 200px
+      width 210px
       margin 65px 0 50px 45%
       position relative
       &:before 
@@ -365,7 +377,7 @@ h1
     width 800px 
     margin 0 auto
     img 
-      margin 0 0 30px 0
+      margin 0 0 0px 0
       width 100% 
     .num 
       border 2px solid red 
@@ -433,17 +445,24 @@ h1
 .footer__sel 
   margin-left 20px
   line-height 35px
+  label 
+    font-weight 500
   span 
     display block
-    font-weight 400
+    font-weight 500
     a 
       margin-left 5px
+      font-weight 400
 .just-c 
   justify-content center
+  .button 
+    width 680px
 .ul-wrapper 
   margin 40px 0 30px 0
 .footer 
   background: rgb(241, 241, 241);
+  &__link 
+    font-weight bold
   &__bottom 
     margin-bottom 70px
   &__ul 
@@ -459,9 +478,14 @@ h1
     &:first-child
       a 
         color black
+.section-cont__fp 
+  display inline-block
+  span 
+    font-weight bold !important
 .inline
   a
     font-size 18px
+    font-weight bold
   span 
     margin-right 10px
     font-size 18px
@@ -470,6 +494,7 @@ h1
   margin 20px 0 0 0
   a 
     margin-right 20px
+    font-weight bold
 .content-wrapper_white 
   background: white
   padding 40px 60px
@@ -514,6 +539,8 @@ h4
   &__col
     &_270 
       width 270px
+      .red 
+        font-weight bold
     &_650 
       width 626px
       margin-right 40px
@@ -539,6 +566,7 @@ h4
     font-size 18px 
     color black
     margin-left 15px
+    font-weight bold
   &__popup
     width 100%
     padding 1px 40px 40px 40px
@@ -560,10 +588,14 @@ h4
     li 
       margin 12px 0
       font-size 15px
-      color #9c9c9c
       span 
         color black
         font-size 15px
+      .par1 
+        color #9c9c9c
+        width 100px
+      .par2 
+        font-weight bold
 .deal
   font-size 18px
   width 600px 
@@ -714,6 +746,10 @@ body .contacts__img
 .section-cont__slider_reset
   img 
     margin-bottom 15px
+.success 
+  .popup__p 
+    .red 
+      text-decoration none
 .bold 
   font-weight bold
 .popup-wrapper 
@@ -726,6 +762,8 @@ body .contacts__img
 .popup-content
   margin auto auto
   flex-direction column
+  .popup__p 
+    font-weight bold
 .popup__p
   text-align: center
   margin 20px 0
@@ -756,6 +794,8 @@ body .contacts__img
   border-radius (2px)
   padding 30px 90px
   overflow hidden
+  .popup__tel 
+    font-weight bold
 .border_yellow 
   border: 2px solid #eecc50;
   height 55px 
@@ -875,12 +915,23 @@ body .contacts__img
     margin 40px 0 50px 0
     &:last-child
       margin-bottom 20px
+.section-cont_7
+  .fotorama .section-cont__row
+    padding-top 15px
+  .section-cont__slider
+    margin-bottom 0px
+.foto2
+  padding-bottom 0px
+  .fotorama__stage
+    height 490px !important
 @media only screen and (max-width : 1160px)
   .section-cont__span3
     margin: 65px 0 50px 35%;
   .section-cont__photo 
     margin-left: 35%;
 @media only screen and (max-width : 1050px)
+  .section-cont_5 h2.section-cont__h2
+    padding-left 143px
   .header__logo 
     width 340px
   .section-main__row_1000
