@@ -667,6 +667,23 @@ textarea
     display block
 body .contacts__img 
   margin 0 0 30px 0
+.del__adr_reset
+  position relative 
+  left 20px
+.form__row-wrapper 
+  margin 0 0 30px 0
+.ch__adr2
+  margin 0 0 20px 0
+.form__row 
+  height 70px
+  padding 10px
+  cursor pointer
+  margin 0 -10px 10px -10px
+  &_reset 
+    height 40px
+    margin-bottom 5px
+.form__row.jsActive
+  background: #FBF4D7
 .form__input 
   height 50px
   padding 0 10px
@@ -743,6 +760,11 @@ body .contacts__img
   font-size 18px
   width 200px
   vertical-align: top
+.popup__adr
+  img 
+    width 100%
+.ch__adr 
+  margin 10px 0 30px 0
 .section-cont__slider_reset
   img 
     margin-bottom 15px
@@ -924,6 +946,48 @@ body .contacts__img
   padding-bottom 0px
   .fotorama__stage
     height 490px !important
+.del__adr 
+  color #b1b1b1
+  font-weight 300
+  font-size 15px
+.input-wrapper__col
+  width 148px
+.input-wrapper__col_89
+  width 430px
+input[type="checkbox"]
+input[type="radio"]
+  display none
+.filter__label i
+  display inline-block
+  margin 0 10px 0 0
+  width 16px
+  border 2px solid red
+  height @width
+  border-radius(50%)
+  background white
+  cursor pointer
+  vertical-align middle
+  position relative 
+.filter__checkbox_radio
+  box-flex: 1;
+  flex: 0 0 auto;
+.filter__checkbox_radio:checked + i
+  trs()
+  &:after
+    content ''
+    height 8px 
+    width @height 
+    background red
+    border-radius (50%)
+    margin 2px
+    display block
+.span-wrapper span a 
+  margin-left 10px
+.form__select_popup
+  line-height 52px
+.input-wrapper
+  box-flex: 1;
+  flex: 0 0 auto;
 @media only screen and (max-width : 1160px)
   .section-cont__span3
     margin: 65px 0 50px 35%;

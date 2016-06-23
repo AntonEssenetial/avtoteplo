@@ -21,6 +21,11 @@ $(document).ready(function() {
     $('.menu_mobile').toggleClass('active');
   });
 
+  $('.form__row').click(function(event) {
+    $('.form__row').removeClass('jsActive')
+    $(this).addClass('jsActive')
+  });
+
   $('.section-main__links').slick({
     infinite: true,
     slidesToScroll: 1,

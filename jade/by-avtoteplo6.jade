@@ -1,0 +1,79 @@
+doctype
+html
+  head 
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="icon", type='image/x-icon', href="favicon.ico")
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    title Автотепло
+  body
+    .wrapper
+      .popup-wrapper.row
+        .popup-content.animated.fadeInUp.row
+          .popup
+            .close
+            .section-cont__row
+              .section-main__col.section-main__col_popup
+                .section-forms
+                  form(action="")
+                    .span.bold Вы в городе
+                    label().label__select
+                      select.form__select_popup
+                        option(value="") Воронеж
+                        option(value="") Москва
+                    .span.bold Доставка
+                    span.ch__adr2 Выберите подходящий вам способ доставки
+                    .form__row-wrapper
+                      .form__row.row.between.form__row_reset
+                        label().filter__label.row.between
+                          .input-wrapper__col_89.row
+                            .input-wrapper
+                              input(type="radio", name='dest' ).filter__checkbox_radio
+                              i
+                            .span-wrapper
+                              span До пункта самовывоза ПЭК
+                                a(href="").red pecom.ru
+                          .input-wrapper__col.row.between
+                            span.del__adr 5—6 дней
+                            span.del__adr.del__adr_reset 300 &#8381;
+                      .form__row.row.between.form__row_reset
+                        label().filter__label.row.between
+                          .input-wrapper__col_89.row
+                            .input-wrapper
+                              input(type="radio", name='dest' ).filter__checkbox_radio
+                              i
+                            .span-wrapper
+                              span До отделения Почты России
+                                a(href="").red russianpost.ru
+                          .input-wrapper__col.row.between
+                            span.del__adr 5—8 дней
+                            span.del__adr.del__adr_reset 408 &#8381;
+                      .form__row.row.between.form__row_reset
+                        label().filter__label.row.between
+                          .input-wrapper__col_89.row
+                            .input-wrapper
+                              input(type="radio", name='dest' ).filter__checkbox_radio
+                              i
+                            .span-wrapper
+                              span На дом курьером DPD
+                                a(href="").red dpd.ru
+                          .input-wrapper__col.row.between
+                            span.del__adr 4-5 дней
+                            span.del__adr.del__adr_reset 472 &#8381;
+                      .form__row.row.between.form__row_reset
+                        label().filter__label.row.between
+                          .input-wrapper__col_89.row
+                            .input-wrapper
+                              input(type="radio", name='dest' ).filter__checkbox_radio
+                              i
+                            .span-wrapper
+                              span На дом курьером КИТ
+                                a(href="").red tk-kit.ru
+                          .input-wrapper__col.row.between
+                            span.del__adr 4-8 дней
+                            span.del__adr.del__adr_reset 610 &#8381;
+                    .span.bold Телефон
+                    input(type="text", placeholder='Номер с 8 или +7').popup__input
+
+include scripts.jade
