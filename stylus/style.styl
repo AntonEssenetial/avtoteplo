@@ -39,6 +39,8 @@ body
   margin 0 auto
 .header
   padding 20px 45px
+  &__col
+    width 50%
   &__row
     &:first-child
       margin 0 0 10px 0
@@ -49,19 +51,20 @@ body
       content ''
       display inline-block
       vertical-align: middle 
-      margin-right 5px
+      margin-right 10px
       box-flex: 1;
       flex: 0 0 auto;
   &__span2 
     font-size 9px 
     display block
     text-transform: uppercase
-    margin-top 5px
+    margin-top 10px
     font-weight bold
   &__span1
     font-size 24px
     font-weight bold
     margin-top 5px
+    margin-right 10px
   &__form 
     display inline-block
     margin-right 10px
@@ -172,12 +175,18 @@ h1
   position fixed
   bottom 0px
   width 100%
-  padding 20px
+  padding 0px 14px
+  height 60px
   min-width 1000px
   z-index 1
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.17);
+  .section-men-button form
+    margin-right 10px
   .button 
     text-decoration none
+    padding 0 30px
+    height 43px 
+    line-height 43px
+    font-size 18px
 .section-cont_5
   .section-cont__col_40
     position relative 
@@ -1027,12 +1036,25 @@ input[type="radio"]
 .input-wrapper
   box-flex: 1;
   flex: 0 0 auto;
+@media only screen and (max-width : 1200px)
+  .header__span1 
+    display block
+    &:nth-child(2)
+      margin-top 0px
+  .header
+    .header__col:first-child
+      width 40%
+    .header__col:last-child
+      width 60%
 @media only screen and (max-width : 1160px)
   .section-cont__span3
     margin: 65px 0 50px 35%;
   .section-cont__photo 
     margin-left: 35%;
 @media only screen and (max-width : 1050px)
+  .section-menu
+    .button 
+      padding 0 20px
   .section-cont_5 h2.section-cont__h2
     padding-left 143px
   .header__logo 
