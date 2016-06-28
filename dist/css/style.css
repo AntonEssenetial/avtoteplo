@@ -320,11 +320,12 @@ body {
   text-transform: uppercase;
   margin-top: 10px;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 .header__span1 {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 7px;
   margin-right: 10px;
 }
 .header__form {
@@ -489,10 +490,10 @@ h1 span {
 }
 .section-menu .button {
   text-decoration: none;
-  padding: 0 30px;
-  height: 43px;
-  line-height: 43px;
-  font-size: 18px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 17px;
+  width: 106px;
 }
 .section-cont_5 .section-cont__col_40 {
   position: relative;
